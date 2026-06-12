@@ -126,6 +126,44 @@
             margin-bottom: 0;
         }
 
+        .locations {
+            margin-top: 60px;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 40px;
+            border-top: 1px solid #ccc;
+            padding-top: 40px;
+        }
+
+        .location h3 {
+            font-size: 1rem;
+            font-weight: bold;
+            margin-bottom: 12px;
+        }
+
+        .location address {
+            font-style: normal;
+            font-size: 0.97rem;
+            line-height: 1.65;
+            margin-bottom: 12px;
+        }
+
+        .location .hours {
+            font-size: 0.97rem;
+            line-height: 1.65;
+            margin-bottom: 12px;
+        }
+
+        .location .map-link {
+            font-size: 0.97rem;
+        }
+
+        @media (max-width: 900px) {
+            .locations {
+                grid-template-columns: 1fr;
+            }
+        }
+
         @media (max-width: 680px) {
             header {
                 flex-direction: column;
@@ -190,6 +228,50 @@
                 <p>My mission is to guide clients on a path of positive change and inner harmony. I am committed to restoring hope and confidence to those I serve through innovative therapy methods. I work with clients to help them gain insight into their actions and develop skills and techniques to create healthier outcomes. Each step of the journey is designed to inspire resilience, helping clients navigate life's challenges with confidence and balance.</p>
 
                 <p>I am here to meet you where you are and travel forward together! All care is trauma-informed, LGBTQIA+ affirming, and culturally sensitive. Meet me in Annapolis, Towson, online, or a hybrid of these!</p>
+            </div>
+        </div>
+
+        <div class="locations">
+            <div class="location">
+                <h3>Osler Professional Center</h3>
+                <address>
+                    7600 Osler Drive<br>
+                    Suite 213<br>
+                    Towson, MD 21204
+                </address>
+                <div class="hours">
+                    Tuesdays and Thursdays 8am &ndash; 8pm
+                </div>
+                <div class="map-link">
+                    <a href="https://www.google.com/maps/search/?api=1&query=7600+Osler+Drive+Suite+213+Towson+MD+21204" target="_blank" rel="noopener noreferrer">View on Google Maps</a>
+                </div>
+            </div>
+
+            <div class="location">
+                <h3>Wellsview Cottage</h3>
+                <address>
+                    613 Ridgely Ave<br>
+                    Annapolis, MD 21401
+                </address>
+                <div class="hours">
+                    Mondays 2pm &ndash; 8pm
+                </div>
+                <div class="map-link">
+                    <a href="https://www.google.com/maps/search/?api=1&query=613+Ridgely+Ave+Annapolis+MD+21401" target="_blank" rel="noopener noreferrer">View on Google Maps</a>
+                </div>
+            </div>
+
+            <div class="location">
+                <h3>Virtual</h3>
+                <address>
+                    Via Simple Practice&rsquo;s HIPAA-compliant telehealth program
+                </address>
+                <div class="hours">
+                    Monday 2pm &ndash; 8pm<br>
+                    Tuesday 8am &ndash; 8pm<br>
+                    Wednesday 8am &ndash; 6pm<br>
+                    Thursday 8am &ndash; 8pm
+                </div>
             </div>
         </div>
     </main>
