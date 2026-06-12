@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQs – Alana Prato-Shein Therapy</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Verdana, Geneva, sans-serif;
+            background: #fff;
+            color: #000;
+        }
+
+        header {
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+            padding: 30px 50px;
+            max-width: 75%;
+            margin: 0 auto;
+        }
+
+        .logo a {
+            text-decoration: none;
+            color: #000;
+        }
+
+        .logo img {
+            width: 315px;
+            height: auto;
+            display: block;
+        }
+
+        nav {
+            display: flex;
+            align-items: center;
+            gap: 36px;
+            padding-top: 28px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #000;
+            font-size: 1rem;
+        }
+
+        nav a:visited {
+            color: #000;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        nav a.active {
+            font-weight: bold;
+            text-decoration: underline;
+        }
+
+        .contact-btn {
+            display: block;
+            background: #8db5cc;
+            color: #000;
+            text-decoration: none;
+            padding: 16px 22px;
+            text-align: center;
+            font-size: 1.15rem;
+            font-weight: bold;
+            min-width: 140px;
+            line-height: 1.3;
+        }
+
+        .contact-btn:hover {
+            background: #7aa5bc;
+        }
+
+        .contact-sub {
+            display: block;
+            font-size: 0.85rem;
+            font-weight: normal;
+            margin-top: 5px;
+        }
+
+        main {
+            max-width: 75%;
+            margin: 0 auto;
+            padding: 10px 50px 80px;
+        }
+
+        main a {
+            color: blue;
+        }
+
+        h1 {
+            font-family: Verdana, Geneva, sans-serif;
+            font-size: 2.1rem;
+            font-weight: bold;
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .faq-list {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        details {
+            border-bottom: 1px solid #ccc;
+        }
+
+        summary {
+            font-size: 1rem;
+            font-weight: bold;
+            padding: 18px 8px 18px 0;
+            cursor: pointer;
+            list-style: none;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 16px;
+        }
+
+        summary::-webkit-details-marker {
+            display: none;
+        }
+
+        summary::after {
+            content: '+';
+            font-size: 1.4rem;
+            font-weight: normal;
+            flex-shrink: 0;
+            transition: transform 0.2s ease;
+        }
+
+        details[open] summary::after {
+            content: '\2212';
+        }
+
+        .faq-body {
+            padding: 0 8px 20px;
+        }
+
+        .faq-body p {
+            font-size: 0.97rem;
+            line-height: 1.65;
+            margin-bottom: 14px;
+        }
+
+        .faq-body p:last-child {
+            margin-bottom: 0;
+        }
+
+        .faq-body ul {
+            font-size: 0.97rem;
+            line-height: 1.65;
+            margin: 10px 0 14px 24px;
+        }
+
+        .faq-body ul li {
+            margin-bottom: 6px;
+        }
+
+        .faq-body ul li:last-child {
+            margin-bottom: 0;
+        }
+
+        @media (max-width: 680px) {
+            header {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 20px;
+                padding: 20px 24px;
+            }
+
+            nav {
+                padding-top: 0;
+                flex-wrap: wrap;
+                gap: 16px;
+            }
+
+            main {
+                padding: 10px 24px 60px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <a href="index.html">
+                <img src="logofinal.png" alt="Alana Prato-Shein Therapy">
+            </a>
+        </div>
+
+        <nav>
+            <a href="about.html">About Us</a>
+            <a href="services.html">Services</a>
+            <a href="faqs.html" class="active">FAQs</a>
+            <a href="https://alanapratosheintherapy.com/resources">Resources</a>
+        </nav>
+
+        <a href="https://alanapratosheintherapy.com/contact" class="contact-btn">
+            Contact us today!
+            <span class="contact-sub">[Box links to form]</span>
+        </a>
+    </header>
+
+    <main>
+        <h1>Frequently Asked Questions</h1>
+
+        <div class="faq-list">
+
+            <details>
+                <summary>How much does it cost, and how can I pay?</summary>
+                <div class="faq-body">
+                    <p>Intake sessions for individual clients cost $200, and all sessions following the intake cost $185 per session. All couples sessions cost $250 per session. I have a limited number of sliding scale spaces available&mdash;if cost is a prohibitive factor, let&rsquo;s talk and see if we can find a solution.</p>
+                    <p>If you are paying by card (to include debit cards, HSA, FSA, etc.) there is a small fee to counter the surcharge for the program Stripe. This fee is $3 for charges between $100 and $199 and $5 for charges between $200 and $299.</p>
+                </div>
+            </details>
+
+            <details>
+                <summary>Do you take insurance?</summary>
+                <div class="faq-body">
+                    <p>I am an &ldquo;out-of-network&rdquo; provider and do not accept insurance at my practice. If you have out-of-network benefits, I am happy to provide a superbill after each session, which you can submit to your insurance for reimbursement. To find out about your benefits, I recommend calling the customer service number on the back of your insurance card and asking them the following questions:</p>
+                    <ul>
+                        <li>What is my co-insurance or copay for out-of-network sessions?</li>
+                        <li>What is my out-of-network deductible and has it been met?</li>
+                        <li>What is my out-of-pocket max and has it been met?</li>
+                        <li>How many sessions does my plan cover per year?</li>
+                        <li>What is the out-of-network allowed amount per individual therapy session (CPT code 90837) / family (couples) therapy (CPT code 90847)?</li>
+                        <li>Do I need a referral from an in-network provider to see an out-of-network provider?</li>
+                    </ul>
+                </div>
+            </details>
+
+            <details>
+                <summary>What can I expect in therapy?</summary>
+                <div class="faq-body">
+                    <p>Sessions are based on the individual or individuals and vary! In talk therapy, much of my focus is on examining relationships and behavioral patterns from your earlier life, exploring how this informs your current relationships and behaviors, and developing skills to help manage symptoms and change patterns.</p>
+                    <p>Play therapy works and looks quite different. While we might do some talking to process the experience and piece things together, a lot of the therapy comes from the expression and the metaphors within the play! Similarly, a lot of the skills arise as part of the games we play.</p>
+                </div>
+            </details>
+
+            <details>
+                <summary>How often do we meet?</summary>
+                <div class="faq-body">
+                    <p>This is also different for everyone! Most of my individual patients meet once a week or every other week. Most couples meet every other week to once a month. I often recommend more frequency at the beginning of our work or when you are in a particularly difficult time, and then spacing our sessions a bit farther apart as you begin to feel you are in a better space.</p>
+                </div>
+            </details>
+
+            <details>
+                <summary>How does teletherapy work?</summary>
+                <div class="faq-body">
+                    <p>I utilize a telehealth platform through Simple Practice, the same program you will have access to for your documents and appointment reminders! This program is HIPAA-compliant and can be used on a computer, phone, or tablet. You will receive a link for the video appointment approximately 5&ndash;10 minutes prior to your session. I ask that, unless we have previously discussed this, your camera be on for the session so that we can both be fully engaged.</p>
+                </div>
+            </details>
+
+            <details>
+                <summary>Is your space ADA accessible?</summary>
+                <div class="faq-body">
+                    <p>The Towson office is fully ADA accessible. The Annapolis office does have stairs to our normal room&mdash;if this creates a problem for you, there are other spaces available that we can use! Please let me know in advance so I can accommodate your needs.</p>
+                </div>
+            </details>
+
+            <details>
+                <summary>What role does the dog play in therapy?</summary>
+                <div class="faq-body">
+                    <p>For talk therapy sessions, Eir is there more as a comfort and support. Her reactions can also provide feedback to the emotions you are expressing, whether or not you are conscious of them!</p>
+                    <p>In canine-assisted play therapy, Eir takes a more active role. She is often directly involved in the activities the child is engaged in. This involvement is intentional and a part of the therapy.</p>
+                    <p>Eir will always have a space in the office where she can go to rest and disengage if she needs to. Clients are made aware that when she goes to this space, we respect her boundaries and wait for her to choose to re-engage. Eir will always have access to water and potty breaks when at the office.</p>
+                </div>
+            </details>
+
+            <details>
+                <summary>Are parents/guardians a part of the child&rsquo;s session?</summary>
+                <div class="faq-body">
+                    <p>With younger kids in play therapy, accompanying adults will always be invited into the first session to allow the child to become comfortable in a new space. When the child is comfortable, they are allowed to boot you out! Some activities may include the family if it is therapeutically appropriate. If concerning patterns arise, I will reserve the end of the session for talking to the parent (with or without the child present).</p>
+                    <p>For older children and teens, I like to invite the adults into the initial session so we can all go over confidentiality together. While confidentiality laws do not prevent parents/guardians from accessing their child&rsquo;s information, I feel it is important for the child to have some autonomy in their own therapy. In this initial session, we will discuss things that I will inform their adults about (self-harm, behavior that is endangering their safety, suicidality that requires a higher level of care) and how they can be a part of this information sharing.</p>
+                </div>
+            </details>
+
+            <details>
+                <summary>What is your cancellation policy?</summary>
+                <div class="faq-body">
+                    <p>Life happens! I ask that all sessions be cancelled at least 24 hours prior to the session&rsquo;s scheduled start time. Canceling before this window carries no cancellation fee. Late cancellations and no-shows will be charged the full session price unless they are able to reschedule for the same week.</p>
+                    <p>I understand that emergencies arise and do my best to be flexible in those situations. I also understand that people with chronic health issues can also have symptoms arise very abruptly. Communication is key! The sooner you let me know what is going on, the better I can work with you to find a solution.</p>
+                </div>
+            </details>
+
+        </div>
+    </main>
+
+</body>
+</html>
