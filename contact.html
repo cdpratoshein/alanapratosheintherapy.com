@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact – Alana Prato-Shein Therapy</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Verdana, Geneva, sans-serif;
+            background: url('nature.jpg') no-repeat top center fixed;
+            background-size: 100% auto;
+            color: #000;
+        }
+
+        header {
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+            padding: 30px 50px;
+            max-width: 75%;
+            margin: 0 auto;
+        }
+
+        .logo a {
+            text-decoration: none;
+            color: #000;
+        }
+
+        .logo img {
+            width: 158px;
+            height: auto;
+            display: block;
+        }
+
+        nav {
+            display: flex;
+            align-items: center;
+            gap: 36px;
+            padding-top: 28px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #000;
+            font-size: 1rem;
+        }
+
+        nav a:visited {
+            color: #000;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        nav a.active {
+            font-weight: bold;
+            text-decoration: underline;
+        }
+
+        main {
+            max-width: 75%;
+            margin: 0 auto;
+            padding: 10px 50px 80px;
+        }
+
+        main a {
+            color: blue;
+        }
+
+        h1 {
+            font-family: Verdana, Geneva, sans-serif;
+            font-size: 2.1rem;
+            font-weight: bold;
+            text-align: center;
+            margin-bottom: 36px;
+        }
+
+        .contact-intro {
+            font-size: 0.97rem;
+            line-height: 1.65;
+            margin-bottom: 36px;
+            max-width: 680px;
+        }
+
+        .contact-form {
+            max-width: 680px;
+        }
+
+        .form-group {
+            margin-bottom: 24px;
+        }
+
+        .form-group label {
+            display: block;
+            font-size: 0.97rem;
+            font-weight: bold;
+            margin-bottom: 8px;
+        }
+
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            font-family: Verdana, Geneva, sans-serif;
+            font-size: 0.97rem;
+            padding: 10px 12px;
+            border: 1px solid #999;
+            background: #fff;
+        }
+
+        .form-group textarea {
+            height: 160px;
+            resize: vertical;
+        }
+
+        .form-submit {
+            display: inline-block;
+            background: #8db5cc;
+            color: #000;
+            font-family: Verdana, Geneva, sans-serif;
+            font-size: 1rem;
+            font-weight: bold;
+            padding: 12px 32px;
+            border: none;
+            cursor: pointer;
+        }
+
+        .form-submit:hover {
+            background: #7aa5bc;
+        }
+
+        @media (max-width: 680px) {
+            body {
+                background-attachment: scroll;
+            }
+
+            header {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 16px;
+                padding: 16px 20px;
+                max-width: 100%;
+            }
+
+            nav {
+                padding-top: 0;
+                flex-wrap: wrap;
+                gap: 14px;
+                font-size: 0.9rem;
+            }
+
+            h1 {
+                font-size: 1.4rem;
+                margin-bottom: 24px;
+            }
+
+            main {
+                padding: 10px 20px 50px;
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <a href="index.html">
+                <img src="logofinal.png" alt="Alana Prato-Shein Therapy">
+            </a>
+        </div>
+
+        <nav>
+            <a href="about.html">About Us</a>
+            <a href="services.html">Services</a>
+            <a href="faqs.html">FAQs</a>
+            <a href="resources.html">Resources</a>
+            <a href="contact.html" class="active">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Contact</h1>
+
+        <p class="contact-intro">I do my best to respond within two business days. If you have not heard back from me within two business days, please check your spam folder as sometimes my replies end up there!</p>
+
+        <!-- Connect this form to a service such as Formspree (formspree.io) by setting action="https://formspree.io/f/YOUR_FORM_ID" -->
+        <form class="contact-form" method="POST" action="#">
+
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone">
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" required></textarea>
+            </div>
+
+            <button type="submit" class="form-submit">Send Message</button>
+
+        </form>
+    </main>
+
+</body>
+</html>
