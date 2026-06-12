@@ -13,7 +13,8 @@
 
         body {
             font-family: Verdana, Geneva, sans-serif;
-            background: #fff;
+            background: url('nature.jpg') no-repeat center center fixed;
+            background-size: cover;
             color: #000;
         }
 
@@ -144,28 +145,55 @@
         }
 
         .resources-photo img {
-            max-width: 100%;
+            max-width: 33%;
             height: auto;
             display: block;
             margin: 0 auto;
         }
 
         @media (max-width: 680px) {
+            body {
+                background-attachment: scroll;
+            }
+
             header {
                 flex-direction: column;
                 align-items: flex-start;
-                gap: 20px;
-                padding: 20px 24px;
+                gap: 16px;
+                padding: 16px 20px;
+                max-width: 100%;
             }
 
             nav {
                 padding-top: 0;
                 flex-wrap: wrap;
-                gap: 16px;
+                gap: 14px;
+                font-size: 0.9rem;
+            }
+
+            .contact-btn {
+                width: 100%;
+                box-sizing: border-box;
+                font-size: 1rem;
+                padding: 12px 16px;
+            }
+
+            h1 {
+                font-size: 1.4rem;
+                margin-bottom: 30px;
+            }
+
+            h2 {
+                font-size: 1.1rem;
             }
 
             main {
-                padding: 10px 24px 60px;
+                padding: 10px 20px 50px;
+                max-width: 100%;
+            }
+
+            .resources-photo img {
+                max-width: 60%;
             }
         }
     </style>
