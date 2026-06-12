@@ -12,9 +12,9 @@
         }
 
         body {
-            font-family: Arial, Helvetica, sans-serif;
+            font-family: Verdana, Geneva, sans-serif;
             background: #fff;
-            color: #222;
+            color: #000;
         }
 
         header {
@@ -22,13 +22,13 @@
             align-items: flex-start;
             justify-content: space-between;
             padding: 30px 50px;
-            max-width: 960px;
+            max-width: 80%;
             margin: 0 auto;
         }
 
         .logo a {
             text-decoration: none;
-            color: #222;
+            color: blue;
         }
 
         .logo img {
@@ -46,7 +46,7 @@
 
         nav a {
             text-decoration: none;
-            color: #222;
+            color: blue;
             font-size: 1rem;
         }
 
@@ -54,10 +54,15 @@
             text-decoration: underline;
         }
 
+        nav a.active {
+            font-weight: bold;
+            text-decoration: underline;
+        }
+
         .contact-btn {
             display: block;
             background: #8db5cc;
-            color: #222;
+            color: blue;
             text-decoration: none;
             padding: 16px 22px;
             text-align: center;
@@ -79,13 +84,13 @@
         }
 
         main {
-            max-width: 960px;
+            max-width: 80%;
             margin: 0 auto;
             padding: 10px 50px 80px;
         }
 
         h1 {
-            font-family: 'Courier New', Courier, monospace;
+            font-family: Verdana, Geneva, sans-serif;
             font-size: 2.1rem;
             font-weight: bold;
             text-align: center;
@@ -120,7 +125,7 @@
         }
 
         .profile-text h2 {
-            font-family: 'Courier New', Courier, monospace;
+            font-family: Verdana, Geneva, sans-serif;
             font-size: 1.6rem;
             font-weight: bold;
             margin-bottom: 18px;
@@ -181,7 +186,7 @@
         </div>
 
         <nav>
-            <a href="about.html">About Us</a>
+            <a href="about.html" class="active">About Us</a>
             <a href="services.html">Services</a>
             <a href="https://alanapratosheintherapy.com/faqs">FAQs</a>
             <a href="https://alanapratosheintherapy.com/resources">Resources</a>
