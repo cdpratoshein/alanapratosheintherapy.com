@@ -86,7 +86,6 @@ h1 {
 .page-index h1     { margin-bottom: 30px; }
 .page-contact h1   { margin-bottom: 36px; }
 
-/* Honeypot — hides the anti-spam field on the contact form */
 .honeypot {
     display: none;
 }
